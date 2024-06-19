@@ -1,0 +1,130 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <link href = "{% static 'main/css/main.css'%}" rel = "stylesheet">
+    <title>Инвест ассистент</title>
+  </head>
+  <body>
+    <div id="home_page">
+      <div class="row">
+        <div id="name" class="col-md-6">
+          <p class="text-center">INVEST<br>ASSISTANT</p>
+          <p class="text-center"><img src="{% static 'main/img/gr.png'%}"></p>
+        </div>
+        <div id="info"class="col-md-6">
+          <p class="text-center">IA подберет для Вас лучшие<br>стратегии инвестирования</p>
+        </div>
+
+        <div id="start" class="col-md-12">
+          <p align="center"><a href="{% url 'count' %}#about_form"><button>START</button></a></p>
+        </div>
+      </div>
+    </div>
+    {% block count %}
+    {% endblock %}
+
+
+    <!-- <div id="form">
+      <form class="text-center" action = "" method="">
+      <div class="row">
+        <div id="about_form" class="col-md-12">
+          <h2 align="center"id="count"><b><br>Произведем разовый подсчет</b></h2><br/>
+          <h3 align="center">Какой именно <b>подсчет?</b><br>
+    <b>Подсчет</b>, который поможет выбрать, куда и как лучше<br>
+    вложить свои средства: вложения в какой банк или акции<br>
+    какой компании тебе больше подойдут. <b>Поля цель и время не<br>
+    обязательны для заполнения.</b></h3>
+        </div>
+        <div align="center" id="money" class="col-md-4">
+            <label></lable>
+              <input type="text" placeholder=". . ." required>
+          <p><b>Введи сумму</b><br>Сумма, которую ты<br>готов вложить<br></p>
+        </div>
+
+        <div id="time_b" class="col-md-4">
+          <h1 align="center">Добавить время</h1>
+          <p align="center"><button class ='t_b' value="Click" onmousedown="noneDiv(time_b), viewDiv(time)">+</button></p>
+        </div>
+
+        <div align="center" id="time" class="col-md-4">
+          <label></lable>
+            <input type="text" placeholder=". . .">
+          <p><b>Введи количество месяцев</b><br>Время, в течение которого<br>ты готов инвестировать<br></p>
+        </div>
+
+        <div id="target_b" class="col-md-4">
+          <h1 align="center">Добавить цель</h1>
+          <p align="center"><button class ='tt_b' value="Click" onmousedown="noneDiv(target_b), viewDiv(t)">+</button></p>
+        </div>
+
+        <div align="center" id="t" class="col-md-4">
+          <label></lable>
+            <input type="text" placeholder=". . .">
+          <p><b>Введи желаемую сумму</b><br>Сумма, которую ты<br>хочешь получить<br></p>
+        </div>
+
+        <div id="bank" class="col-md-6">
+          <p><input type="radio" name="a" value="0" onmousedown="viewDiv(invest)"><br>ВЛОЖИТЬ В БАНК</p>
+        </div>
+
+        <div id="promotoin" class="col-md-6">
+          <p><input type="radio" name="a" value="0" onmousedown="viewDiv(invest)"><br>ВЛОЖИТЬ В АКЦИИ</p>
+        </div>
+
+        <div id="go" class="col-md-12">
+          <p align="center"><a href='#invest'><button type="submit"class ='go_b'value="Click" onmousedown="viewDiv(invest)">ПОДСЧЕТ</button></a></p>
+        </div>
+      </div>
+      </form>
+    </div> -->
+
+
+    <!-- <div id="ch">
+      <div class="row">
+        <div id="about" class="col-md-12">
+          <h2 align="center"id="count"><b><br>Мы подобрали<br> для тебя несколько стратегий.</b></h2>
+        </div>
+        <div id="bank" class="col-md-6">
+          <p class="info" align="center">Невысокий процент,<br>но высокие гарантии<br>и минимум риска<br></p>
+          <p class="b" align="center"><a href="#invest"><button value="Click" onmousedown="viewDiv(invest)">ВЛОЖИТЬ В<br>БАНК</button></a></p>
+        </div>
+        <div id="promotoin" class="col-md-6">
+          <p class="info" align="center">Большой выбор,<br>серьезный профит,<br>но большой риск<br></p>
+          <p class="b" align="center"><a href="#invest"><button value="Click" onmousedown="viewDiv(invest)">ВЛОЖИТЬ В<br>АКЦИИ</button></a></p>
+        </div>
+      </div>
+    </div> -->
+
+
+    <!-- <div id="invest">
+      <div class="row">
+        <div id="about_in" class="col-md-12">
+          <h2 align="center"id="in"><b><br>На данный момент ваши средства выгодно вложить в:</b></h2>
+        </div>
+        <div id="variant_1">
+
+        </div>
+        <div id="variant_2">
+
+        </div>
+        <div id="variant_3">
+
+        </div>
+        <div id="back" class="col-md-6">
+          <p align="left"><a href="#ch"><button value="Click" onmousedown="noneDiv(invest)">НАЗАД</button></a></p>
+        </div>
+        <div id="again" class="col-md-6">
+          <p align="right"><a href="#about_form"><button value="Click" onmousedown="noneDiv(invest), noneDiv(ch)">ПОДСЧЕТ</button></a></p>
+        </div>
+      </div>
+    </div> -->
+
+
+    <script src="{% static 'main/js/main.js'%}"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+{% extends 'main/main.html' %}
+{% load static %}
+
+{% block count %}
+<div id="form">
+  <form class="text-center" method="post">
+  {% csrf_token %}
+  <div class="row">
+
+    <div id="about_form" class="col-md-12">
+      <h2 align="center"id="count"><b><br>Произведем разовый подсчет</b></h2><br/>
+      <h3 align="center">Какой именно <b>подсчет?</b><br>
+<b>Подсчет</b>, который поможет выбрать, куда и как лучше<br>
+вложить свои средства: вложения в какой банк или акции<br>
+какой компании тебе больше подойдут. <b>Поля цель и время не<br>
+обязательны для заполнения.</b></h3>
+    </div>
+    <div align="center" id="money" class="col-md-4">
+      <input name="money" type="text" placeholder=". . ." required>
+      <p><b>Введи сумму</b><br>Сумма, которую ты<br>готов вложить<br></p>
+    </div>
+
+    <!-- <div id="time_b" class="col-md-4">
+      <h1 align="center">Добавить время</h1>
+      <p align="center"><button class ='t_b' value="Click" onmousedown="noneDiv(time_b); viewDiv(a)">+</button></p>
+    </div> -->
+
+    <div align="center" id="a" class="col-md-4">
+        <input name="a" type="text" placeholder=". . .">
+      <p><b>Введи количество лет</b><br>Время, в течение которого<br>ты готов инвестировать<br></p>
+    </div>
+
+    <!-- <div id="target_b" class="col-md-4">
+      <h1 align="center">Добавить цель</h1>
+      <p align="center"><button class ='tt_b' value="Click" onmousedown="noneDiv(target_b); viewDiv(b)">+</button></p>
+    </div> -->
+
+    <div align="center" id="b" class="col-md-4">
+        <input name="b" type="text" placeholder=". . .">
+      <p><b>Введи желаемую сумму</b><br>Сумма, которую ты<br>хочешь получить<br></p>
+    </div>
+
+    <div id="bank" class="col-md-6">
+      <p><input name="c" value= 'b'type="radio"><br>ВЛОЖИТЬ В БАНК</p>
+    </div>
+
+    <div id="promotoin" class="col-md-6">
+      <p><input name="c" value= 'p'type="radio"><br>ВЛОЖИТЬ В АКЦИИ</p>
+    </div>
+
+    <div align="center" id="go" class="col-md-12">
+      <p align="center"><a href="#invest"><button type="submit" class ='go_b' value="Click" onmousedown="viewDiv(invest)">ПОДСЧЕТ</button></a></p>
+    </div>
+  </div>
+  </form>
+</div>
+{% block contetn %}
+{% endblock %}
+{% endblock %}

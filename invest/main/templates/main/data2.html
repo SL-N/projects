@@ -1,0 +1,27 @@
+{% extends 'main/count.html' %}
+{% load static %}
+
+{% block contetn %}
+<div id="invest" align="center">
+  <div class="row">
+    <div id="about_in" class="col-md-12">
+      <h2 align="center"id="in"><b><br>На данный момент ваши средства выгодно вложить в:</b></h2>
+    </div>
+    <div id="variant_1">
+      <p> - <b>{{title}}</b> под {{procent}}% годовых на {{time}} года<br>Итоговая сумма составит {{result}} рублей<br><b>(Самый прибыльный, но ненадежный вариант)</b></p>
+    </div>
+    <div id="variant_2">
+      <p> - <b>{{title1}}</b> под {{procent1}}% годовых на {{time1}} года<br>Итоговая сумма составит {{result1}} рублей<br><b>(Сбалансированный по риску и прибыли вариант)</b></p>
+    </div>
+    <div id="variant_3">
+      <p> - <b>{{title2}}</b> под {{procent2}}% годовых на {{time2}} года<br>Итоговая сумма составит {{result2}} рублей<br><b>(Самый надежный вариант)</b></p>
+    </div>
+    <!-- <div id="back" class="col-md-6">
+      <p align="left"><a href="#ch"><button value="Click" onmousedown="noneDiv(invest)">НАЗАД</button></a></p>
+    </div>
+    <div id="again" class="col-md-6">
+      <p align="right"><a href="#about_form"><button value="Click" onmousedown="noneDiv(invest), noneDiv(ch)">ПОДСЧЕТ</button></a></p>
+    </div> -->
+  </div>
+</div>
+{% endblock %}

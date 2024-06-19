@@ -1,0 +1,236 @@
+body{
+  background: #09101a;
+}
+#home_page{
+  color: #dae1eb;
+  margin: 5px;
+}
+
+#name{
+  height: 300px;
+  font-size: 80px;
+  position: relative;
+  top: 270px;
+  letter-spacing: 8px;
+}
+
+#name img{
+  position:relative;
+  top: -65px;
+  width: 470px;
+}
+
+#info{
+  position: relative;
+  height: 200px;
+  top: 360px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+#start{
+  position: relative;
+  width: 100%;
+  font-size: 40px;
+  letter-spacing: 3px;
+  top: 350px;
+}
+#start button{
+  width: 200px;
+}
+#form{
+  position: relative;
+  width: 100%;
+  font-size: 25px;
+  letter-spacing: 3px;
+  top: 450px;
+}
+#about_form{
+  position: relative;
+  color: #dae1eb;
+  height: 350px;
+}
+#money, #a, #b{
+  top: 30px;
+  position: relative;
+  height: 200px;
+}
+#money, #a, #b p{
+  color: #dae1eb;;
+}
+/* #a{
+  display: none;
+}
+#b{
+  display: none;
+} */
+#target_b{
+  display: block;
+}
+#time_b{
+  display: block;
+}
+#target_b, #time_b{
+  top: 30px;
+  position: relative;
+  font-size: 25px;
+  letter-spacing: 3px;
+  color: #dae1eb;
+}
+#target_b h1, #time_b h1{
+  font-size: 30px;
+}
+.i{
+  position: relative;
+  height: 50px;
+  width: 250px;
+  border-radius:10px;
+}
+
+#bank, #promotoin{
+  position: relative;
+  height: 100px;
+  font-size: 23px;
+  letter-spacing: 2px;
+  color: #dae1eb;
+  top: 50px;
+}
+#bank{
+  left:100px;
+}
+#promotoin{
+  right:100px;
+}
+
+#go{
+  top:100px;
+  height: 180px;
+  position: relative;
+  /* right: 120px; */
+}
+
+#go button{
+  height: 50px;
+  width: 200px;
+}
+/* #ch{
+  display: none;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: 470px;
+}
+#about{
+  height: 250px;
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: #dae1eb;
+}
+#bank, #promotoin{
+  position: relative;
+  height: 550px;
+  font-size: 23px;
+  letter-spacing: 2px;
+  color: #dae1eb;
+}
+.b{
+  position:relative;
+  top: 150px;
+}
+.b button{
+  height: 70px;
+  width: 250px;
+} */
+#invest{
+  /* display: none; */
+  position: relative;
+  top: 450px;
+}
+#in{
+  height: 150px;
+  font-size: 35px;
+  letter-spacing: 2px;
+  color: #dae1eb;
+}
+#variant_1{
+  margin: 20px;
+  font-size: 35px;
+  letter-spacing: 2px;
+  color: #dae1eb;
+  position: relative;
+  height: 200px;
+}
+#variant_2{
+  margin: 20px;
+  font-size: 35px;
+  letter-spacing: 2px;
+  color: #dae1eb;
+  position: relative;
+  height: 200px;
+}
+#variant_3{
+  margin: 20px;
+  font-size: 35px;
+  letter-spacing: 2px;
+  color: #dae1eb;
+  position: relative;
+  height: 200px;
+}
+#back{
+  position: relative;
+  height: 80px;
+}
+#back button{
+  position: relative;
+  left:75px;
+  height: 50px;
+  width: 200px;
+  bottom: 50px;
+  font-size: 23px;
+}
+#again{
+  position: relative;
+  height: 80px;
+}
+#again button{
+  position: relative;
+  right:75px;
+  height: 50px;
+  width: 200px;
+  bottom: 50px;
+  font-size: 23px;
+}
+#again button, #back button, #go button, #start button, .b button, #time_b button, #target_b button {
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#again button:hover, #again button:focus, #back button:hover, #back button:focus, #go button:hover, #go button:focus, #start button:hover, #start button:focus, .b button:hover, .b button:focus {
+  color: #fff;
+  outline: 0;
+}
+#time_b button:hover, #target_b button:hover, #time_b button:focus, #target_b button:focus{
+  color: #fff;
+  outline: 0;
+}
+
+
+ #again button, #back button, #go button, #start button, .b button, #time_b button, #target_b button{
+  border-color: #6A5ACD;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #6A5ACD inset, 0 0 0 0 #6A5ACD;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+#again button:hover, #back button:hover, #go button:hover, #start button:hover, .b button:hover, #time_b button:hover, #target_b button:hover {
+  box-shadow: 0 0 10px 0 #6A5ACD inset, 0 0 10px 4px #6A5ACD;
+}
+
+#time_b button, #target_b button{
+  height: 50px;
+  width: 50px;
+  border-radius: 1em;
+}
